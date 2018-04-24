@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #d5efb1;
+	font-family: 'Dosis', cursive;
+	font-weight: bold;
+	text-align: center;
+}

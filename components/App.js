@@ -24,10 +24,10 @@ App = React.createClass({
 	getGif: function(searchingText) {
 
 		return new Promise (
-			let url = 'https://api.giphy.com' + '/v1/gifs/random?api_key=' + 'dc6zaTOxFJmzC' + '&tag=' + searchingText; 
 			
-			function (resolve, reject) {
 			
+			function (resolve,reject) {
+				let url ='https://api.giphy.com' + '/v1/gifs/random?api_key=' + 'dc6zaTOxFJmzC' + '&tag=' + searchingText; 
 				let xhr = new XMLHttpRequest(); 
 				xhr.open('GET', url);
 				xhr.onload = function() {

@@ -43,6 +43,9 @@ App = React.createClass({
 						reject(new Error(this.statusText))
 					}
 				};
+				//xhr.onerror = function () {
+					//reject(new Error(`XMLHttpRequest Error: ${this.statusText}`));
+				//};
 				xhr.send();
 			}	
 		)
